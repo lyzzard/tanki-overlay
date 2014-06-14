@@ -1,0 +1,180 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,900&subset=latin,cyrillic-ext,cyrillic);
+
+#js-overlay_wrapper {
+	min-width: 875px;
+	min-height: 192px;
+	margin: 0px;
+	display: none;
+	position: absolute;
+	top: 19px;
+	left: 200px;
+	z-index: 111;
+	overflow: hidden;
+	max-width: 100%;
+	max-height: 100%;
+	background-image: url(chrome-extension://__MSG_@@extension_id__/img/bg.png);
+	font-family: 'Roboto', sans-serif;
+}
+#js-overlay_wrapper .b-splash {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	z-index: 111;
+	display: none;
+	cursor: pointer;
+}
+#js-overlay_wrapper .b-overlay {
+	width: 755px;
+	height: 160px;
+	margin: 0 auto;
+	position: absolute;
+	top: 0px;
+	left: 60px;
+	color: #fff;
+	text-transform: uppercase;
+	-webkit-font-smoothing: antialiased;
+	display: block;
+}
+#js-overlay_wrapper .b-overlay.rotate {
+	opacity: 1;
+	top: 0;
+}
+#js-overlay_wrapper .b-left, #js-overlay_wrapper .b-right {
+	width: 256px;
+	height: 63px;
+	position: absolute;
+	top: 30px;
+	font-weight: bold;
+}
+#js-overlay_wrapper .b-left {
+	
+	border-radius: 10px 0 0 10px;
+}
+
+#js-overlay_wrapper .b-right {
+	right: 5px;
+	border-radius: 0 10px 10px 0;
+}
+
+#js-overlay_wrapper .b-flag, #js-overlay_wrapper .b-flag.ru {
+	width: 22px;
+	height: 16px;
+	position: absolute;
+	top: 24px;
+	background-image: url(chrome-extension://__MSG_@@extension_id__/img/flags.png);
+	background-repeat: no-repeat;
+	background-position: 22px 0px;
+}
+#js-overlay_wrapper .b-flag.ru {
+	background-position: 0px 0px;
+}
+#js-overlay_wrapper .b-flag.ua {
+	background-position: -22px 0px;
+}
+#js-overlay_wrapper .b-flag.lv {
+	background-position: -44px 0px;
+}
+#js-overlay_wrapper .b-flag.ge {
+	background-position: -66px 0px;
+}
+#js-overlay_wrapper .b-flag.sa {
+	background-position: -88px 0px;
+}
+#js-overlay_wrapper .b-flag.de {
+	background-position: -110px 0px;
+}
+#js-overlay_wrapper .b-flag.it {
+	background-position: -132px 0px;
+}
+#js-overlay_wrapper .b-flag.nl {
+	background-position: -154px 0px;
+}
+#js-overlay_wrapper .b-flag.by {
+	background-position: -176px 0px;
+}
+#js-overlay_wrapper .b-flag.am {
+	background-position: -198px 0px;
+}
+#js-overlay_wrapper .b-flag.uk {
+	background-position: -220px 0px;
+}
+#js-overlay_wrapper .b-flag.eu {
+	background-position: -242px 0px;
+}
+#js-overlay_wrapper .b-left .b-flag {
+	right: 23px;
+}
+#js-overlay_wrapper .b-right .b-flag {
+	left: 23px;
+}
+
+#js-overlay_wrapper .b-clan {
+	position: absolute;
+	line-height: 63px;
+	font-size: 26px;
+	cursor: pointer;
+}
+#js-overlay_wrapper .b-left .b-clan {
+	right: 62px;
+}
+#js-overlay_wrapper .b-right .b-clan {
+	left: 62px;
+}
+
+#js-overlay_wrapper .b-score {
+	width: 122px;
+	height: 63px;
+	position: absolute;
+	top: 30px;
+	right: 320px;
+	font-weight: bold;
+	color: #ffae00;
+	text-shadow: 0 0 1px rgba(0,0,0,.5);
+}
+#js-overlay_wrapper .b-score_split {
+	width: 15px;
+	height: 50px;
+	line-height: 50px;
+	position: absolute;
+	left: 55px;
+	top: 2px;
+	cursor: pointer;
+	font-size: 50px;
+	z-index: 111;
+}
+#js-overlay_wrapper .b-score_left, #js-overlay_wrapper .b-score_right {
+	width: 61px;
+	height: 63px;
+	position: absolute;
+	font-size: 50px;
+	text-align: center;
+	line-height: 60px;
+	cursor: pointer;
+}
+#js-overlay_wrapper .b-score_left u, #js-overlay_wrapper .b-score_right u {
+	text-decoration: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	text-shadow: 0px 0px 25px #ffd680;
+	left: 16px;
+}
+#js-overlay_wrapper .b-score_left {
+	left: 0;
+}
+#js-overlay_wrapper .b-score_right {
+	right: 0;
+}
+
+#js-overlay_wrapper .b-round {
+	width: 136px;
+	font-size: 22px;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 0 1px 1px rgba(255,255,255,.5);
+	position: absolute;
+	right: 313px;
+	top: 0px;
+	color: #353434;
+	cursor: pointer;
+}
