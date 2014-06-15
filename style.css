@@ -168,6 +168,13 @@
 #js-overlay_wrapper .b-score_right {
 	right: 0;
 }
+#js-overlay_wrapper .b-score span {
+	transition: all .3s ease-in;
+	text-shadow: none;
+}
+#js-overlay_wrapper .b-score span:active {
+	text-shadow: rgb(255, 214, 128) 0px 0px 25px;
+}
 
 #js-overlay_wrapper .b-round {
 	width: 136px;
