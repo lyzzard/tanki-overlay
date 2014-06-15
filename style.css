@@ -15,6 +15,9 @@
 	background-image: url(chrome-extension://__MSG_@@extension_id__/img/bg.png);
 	font-family: 'Roboto', sans-serif;
 }
+#js-overlay_wrapper.b-wrapper_reverse {
+	background-image: url(chrome-extension://__MSG_@@extension_id__/img/bg-reverse.png);
+}
 #js-overlay_wrapper .b-splash {
 	position: relative;
 	left: 0px;
