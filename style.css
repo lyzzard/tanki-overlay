@@ -1,8 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,700,900&subset=latin,cyrillic-ext,cyrillic);
 
 #js-overlay_wrapper {
-	min-width: 875px;
-	min-height: 192px;
+	width: 875px;
+	height: 192px;
 	margin: 0px;
 	display: none;
 	position: absolute;
@@ -16,7 +16,7 @@
 	font-family: 'Roboto', sans-serif;
 }
 #js-overlay_wrapper.b-wrapper_reverse {
-	background-image: url(chrome-extension://__MSG_@@extension_id__/img/bg-reverse.png);
+	background-position: 0px -192px;
 }
 #js-overlay_wrapper .b-splash {
 	position: relative;

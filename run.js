@@ -82,9 +82,7 @@ $.get("http://alex.badarin.s3.amazonaws.com/tv.json?" + Math.random(), function(
 					}
 				}
 			})
-			.delegate('.b-overlay, .b-splash', 'selectstart contextmenu', function() {
-				return false;
-			})
+			.delegate('.b-overlay, .b-splash', 'selectstart contextmenu', false)
 			.delegate('.b-round, .b-score_left, .b-score_right', 'mousedown', function(e, which) {
 				var old = parseInt($('span', this).text());
 
@@ -98,7 +96,7 @@ $.get("http://alex.badarin.s3.amazonaws.com/tv.json?" + Math.random(), function(
 						$('u', this).text($('span', this).text()).show().fadeOut(500);
 						$('.b-score_split', ol).trigger('mousedown', [e.which]);
 					}
-					else if ($(this).is('.b-round') && (old == 4 || $('.b-score_left span').text() >= 3 || $('.b-score_right span').text() >= 3)) {
+					else if ($(this).is('.b-round') && old == 4) {
 						$(this).html('Game over');
 					}
 				}
@@ -117,6 +115,7 @@ $.get("http://alex.badarin.s3.amazonaws.com/tv.json?" + Math.random(), function(
 			})
 			.delegate('.b-score_split', 'mousedown', function(e, which) {
 				(which || e.which == 1) && $('.b-round', ol).trigger('mousedown', [which || e.which]);
+				ol.toggleClass('b-wrapper_reverse');
 			})
 			.delegate('.b-clan', 'mousedown', function(e) {
 				var newTime = parseInt(localStorage.overlayTime.split(':')[0]) + (e.which == 1 ? 1 : -1) + ':00';
@@ -124,15 +123,6 @@ $.get("http://alex.badarin.s3.amazonaws.com/tv.json?" + Math.random(), function(
 				if (newTime in config) {
 					setPair(newTime);
 				}
-			})
-			.delegate('.b-score_split', 'mousedown', function(e) {
-				var t = $('.b-left .b-clan').text();
-				$('.b-left .b-clan').text($('.b-right .b-clan').text());
-				$('.b-right .b-clan').text(t);
-
-				var t = $('.b-left .b-flag').attr('className');
-				$('.b-left .b-flag').attr('className', $('.b-right .b-flag').attr('className'));
-				 $('.b-left .b-flag').attr('className', t);
 			});
 	});
 });
