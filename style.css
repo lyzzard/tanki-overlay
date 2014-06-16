@@ -169,11 +169,15 @@
 	right: 0;
 }
 #js-overlay_wrapper .b-score span {
-	transition: all .3s ease-in;
 	text-shadow: none;
 }
 #js-overlay_wrapper .b-score span:active {
-	text-shadow: rgb(255, 214, 128) 0px 0px 25px;
+	-webkit-animation: flash 1s;
+}
+@-webkit-keyframes flash {
+	0% { text-shadow: none }
+	50% { text-shadow: rgb(255, 214, 128) 0px 0px 25px; }
+	100% { text-shadow: none }
 }
 
 #js-overlay_wrapper .b-round {
