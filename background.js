@@ -5,5 +5,5 @@ chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
 });
 
 chrome.pageAction.onClicked.addListener(function(tab) {
-	chrome.tabs.executeScript(null, {code: "$('#js-overlay_wrapper').trigger('init');"});
+	chrome.tabs.executeScript(null, {file: "trigger.js"});
 });

@@ -1,0 +1,1 @@
+$('#js-overlay_wrapper').trigger('init');
