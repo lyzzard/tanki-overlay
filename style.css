@@ -104,6 +104,9 @@
 #js-overlay_wrapper .b-flag.eu {
 	background-position: -242px 0px;
 }
+#js-overlay_wrapper .b-flag.az {
+	background-position: -264px 0px;
+}
 #js-overlay_wrapper .b-left .b-flag {
 	right: 23px;
 }
